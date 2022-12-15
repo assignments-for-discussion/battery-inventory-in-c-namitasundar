@@ -29,12 +29,9 @@ void testBucketingByNumberOfCycles() {
   {
     highCount++;
   }
-  assert(counts.lowCount);
-  assert(counts.mediumCount);
-  assert(counts.highCount);
-  //assert(counts.lowCount == 2);
-  //assert(counts.mediumCount == 3);
-  //assert(counts.highCount == 1);
+  assert(counts.lowCount == 2);
+  assert(counts.mediumCount == 3);
+  assert(counts.highCount == 1);
   printf("Done counting :)\n");
 }
 
