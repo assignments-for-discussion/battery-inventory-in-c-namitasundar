@@ -17,17 +17,21 @@ void testBucketingByNumberOfCycles() {
   const int numberOfBatteries = sizeof(chargeCycleCounts) / sizeof(chargeCycleCounts[0]);
   printf("Counting batteries by usage cycles...\n");
   struct CountsByUsage counts = countBatteriesByUsage(chargeCycleCounts, numberOfBatteries);
-  if(CountsByUsage.chargeCycleCounts<310)
+  int i;
+  for(i=0;i<numberOfBatteries;i++)
   {
-    CountsByUsage.lowCount++;
-  }
-  if(310<CountsByUsage.chargeCycleCounts<929)
-  {
-   CountsByUsage. mediumCount++;
-  }
-  else
-  {
-    CountsByUsage.highCount++;
+    if(CountsByUsage.chargeCycleCounts<310)
+    {
+      CountsByUsage.lowCount++;
+    }
+    else if(310<CountsByUsage.chargeCycleCounts<929)
+    {
+      CountsByUsage. mediumCount++;
+    }
+    else
+    {
+      CountsByUsage.highCount++;
+    }
   }
   assert(counts.lowCount == 2);
   assert(counts.mediumCount == 3);
