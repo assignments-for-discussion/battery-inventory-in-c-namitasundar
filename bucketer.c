@@ -20,11 +20,11 @@ void testBucketingByNumberOfCycles() {
   int i;
   for(i=0;i<numberOfBatteries;i++)
   {
-    if(CountsByUsage.chargeCycleCounts<310)
+    if(chargeCycleCounts[i]<310)
     {
       CountsByUsage.lowCount++;
     }
-    else if(310<CountsByUsage.chargeCycleCounts<929)
+    else if(310<chargeCycleCounts[i]<929)
     {
       CountsByUsage. mediumCount++;
     }
