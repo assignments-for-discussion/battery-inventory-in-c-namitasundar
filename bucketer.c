@@ -22,7 +22,7 @@ void testBucketingByNumberOfCycles() {
   {
     if(chargeCycleCounts[i]<310)
     {
-      lowCount++;
+      .lowCount++;
     }
     else if(310<chargeCycleCounts[i]<929)
     {
