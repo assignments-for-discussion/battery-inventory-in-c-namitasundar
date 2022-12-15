@@ -22,15 +22,15 @@ void testBucketingByNumberOfCycles() {
   {
     if(chargeCycleCounts[i]<310)
     {
-      CountsByUsage.lowCount++;
+      lowCount++;
     }
     else if(310<chargeCycleCounts[i]<929)
     {
-      CountsByUsage. mediumCount++;
+      mediumCount++;
     }
     else
     {
-      CountsByUsage.highCount++;
+      highCount++;
     }
   }
   assert(counts.lowCount == 2);
