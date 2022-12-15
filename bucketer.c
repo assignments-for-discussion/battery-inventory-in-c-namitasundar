@@ -19,15 +19,15 @@ void testBucketingByNumberOfCycles() {
   struct CountsByUsage counts = countBatteriesByUsage(chargeCycleCounts, numberOfBatteries);
   if(counts<310)
   {
-    lowCount++;
+    CountsByUsage.lowCount++;
   }
   if(310<counts<929)
   {
-    mediumCount++;
+   CountsByUsage. mediumCount++;
   }
   else
   {
-    highCount++;
+    CountsByUsage.highCount++;
   }
   assert(counts.lowCount == 2);
   assert(counts.mediumCount == 3);
